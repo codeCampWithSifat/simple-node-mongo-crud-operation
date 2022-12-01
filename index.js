@@ -71,6 +71,10 @@ async function run() {
       res.send(result)
 
     });
+
+    app.get("/", (req,res) => {
+      res.send("Allah Is Almighty")
+    })
   } finally {
     // await client.close();
   }
